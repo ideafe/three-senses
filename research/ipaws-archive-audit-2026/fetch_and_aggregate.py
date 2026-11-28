@@ -59,8 +59,11 @@ DATASETS_ENDPOINT = "https://www.fema.gov/api/open/v1/DataSets"
 # window stops before "today"; the dataset's own ~24h publication delay means the final
 # calendar day inside the window is itself partial. Both facts are measured, not assumed:
 # see sanity check S7 (final-day record count) and the "window_tail" block in the output.
-WINDOW_START = "2025-08-20T00:00:00.000Z"
-WINDOW_END = "2026-08-20T00:00:00.000Z"
+# The published window is the default. IPAWS_AUDIT_WINDOW_START and IPAWS_AUDIT_WINDOW_END
+# override it for a re-run on another period (both on the 20th of a month, 00:00Z, so the
+# 20th-to-20th sub-windows stay full-length).
+WINDOW_START = os.environ.get("IPAWS_AUDIT_WINDOW_START", "2025-08-20T00:00:00.000Z")
+WINDOW_END = os.environ.get("IPAWS_AUDIT_WINDOW_END", "2026-08-20T00:00:00.000Z")
 
 # Only status=Actual is in scope (drills/tests must not be counted as real public alerts).
 # The archive turns out to contain nothing else at all; the script measures this rather
@@ -77,7 +80,7 @@ PAGE_SIZE = 1000  # OpenFEMA hard maximum for $top
 SLEEP_BETWEEN_REQUESTS = 0.5  # seconds; be a polite API client
 HTTP_TIMEOUT = 300
 HTTP_RETRIES = 4
-USER_AGENT = "chi2027-anonymous-ipaws-analysis/1.0 (research)"
+USER_AGENT = "ide-ipaws-archive-audit/1.0 (research; https://ideafe.org)"
 
 # originalMessage (the raw signed CAP XML) is excluded from the bulk fetch: it is ~10-40 kB
 # per record and every field used below is present in FEMA's own parsed representation.

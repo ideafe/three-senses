@@ -47,6 +47,7 @@ dataset "IPAWS Archived Alerts" version 1. Counts are those of `aggregates-2026-
   of the window (16,508 records).
 - `aggregates-2026-08-20.json`: an earlier snapshot of the same window, computed on 20 August 2026
   (16,456 records), kept for the stability check.
+- `publishable.py`: makes the copy of a counts file that is published here (see below).
 
 ## Reproduce
 
@@ -60,18 +61,26 @@ from saved raw pages without network access. The raw pages are not included: the
 again and take about 86 MB.
 
 The OpenFEMA endpoint refuses requests from some data-centre address ranges with HTTP 403. A home
-connection or a hosted CI runner works.
+connection or a hosted CI runner works. This repository has a manual workflow for that, "Audit
+re-run" (`.github/workflows/audit-rerun.yml`): it runs the script on a GitHub-hosted runner and
+keeps the published copy of the counts as an artifact.
+
+To count another period, set `IPAWS_AUDIT_WINDOW_START` and `IPAWS_AUDIT_WINDOW_END` (both on the
+20th of a month at 00:00Z), or give the two bounds to the workflow. Without them the script counts
+the published window.
 
 ## What is withheld in the published counts
 
-The archive is public, but two things in it point at persons, so the two JSON files here differ from
-the script's own output in two places:
+The archive is public, but two things in it can point at persons, so the JSON files here are the
+output of `publishable.py`, which differs from the script's own output in two places:
 
-- three addresses of image files attached to alerts, because such files may show a person;
-- two sender identifiers that contain a person's name.
+- the addresses of image files attached to alerts are withheld, because such a file may show a
+  person;
+- the sender identifiers in the list of the twenty largest senders are withheld, because some are
+  a person's name. The one automated national sender, which the analysis names, is kept.
 
-Each is replaced by a line that says so. The script reproduces the original values from the public
-dataset.
+Each is replaced by a line that says so. Counts are untouched. The script reproduces the original
+values from the public dataset.
 
 ## How this was made
 
