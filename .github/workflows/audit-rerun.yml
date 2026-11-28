@@ -1,0 +1,69 @@
+# Manual re-run of the IPAWS archive audit (research/ipaws-archive-audit-2026) on a
+# GitHub-hosted runner.
+#
+# WHY A HOSTED RUNNER: FEMA's OpenFEMA endpoint answers HTTP 403 to some data-centre address
+# ranges. Measured on 2026-11-28 from a Hetzner server: refused to curl and to a real browser
+# alike. A hosted runner is answered.
+#
+# MANUAL ONLY (workflow_dispatch): no schedule and no push trigger, so this is not a new
+# automated part. It reads a public dataset, holds no secret and writes nothing to the repo.
+#
+# WHAT IS PUBLISHED: the run log and one artifact, both public on a public repository. The
+# script's own output can carry sender identifiers and file addresses that point at persons,
+# so its log stays on the runner and only lines without an address are echoed, and the
+# artifact is the copy made by publishable.py.
+name: Audit re-run
+on:
+  workflow_dispatch:
+    inputs:
+      window_start:
+        description: "Window start, inclusive (ISO, 20th of a month, 00:00Z)"
+        required: true
+        default: "2025-08-20T00:00:00.000Z"
+        type: string
+      window_end:
+        description: "Window end, exclusive (ISO, 20th of a month, 00:00Z)"
+        required: true
+        default: "2026-08-20T00:00:00.000Z"
+        type: string
+permissions:
+  contents: read
+jobs:
+  rerun:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Fetch the window and recompute the counts
+        env:
+          IPAWS_AUDIT_WINDOW_START: ${{ inputs.window_start }}
+          IPAWS_AUDIT_WINDOW_END: ${{ inputs.window_end }}
+        run: |
+          set -uo pipefail
+          for v in "$IPAWS_AUDIT_WINDOW_START" "$IPAWS_AUDIT_WINDOW_END"; do
+            if ! printf '%s' "$v" | grep -Eq '^[0-9]{4}-[0-9]{2}-20T00:00:00\.000Z$'; then
+              echo "::error::a window bound must look like 2026-08-20T00:00:00.000Z (the 20th of a month)"
+              exit 1
+            fi
+          done
+          python3 --version
+          rc=0
+          python3 research/ipaws-archive-audit-2026/fetch_and_aggregate.py \
+            --raw-dir "$RUNNER_TEMP/raw" --out "$RUNNER_TEMP/aggregates-raw.json" \
+            > "$RUNNER_TEMP/run.log" 2>&1 || rc=$?
+          # Echo the script's log without any line that carries an address.
+          grep -Ev '@|https?://' "$RUNNER_TEMP/run.log" || true
+          if [ "$rc" -ne 0 ]; then
+            echo "::error::the audit script exited $rc"
+            exit "$rc"
+          fi
+          python3 research/ipaws-archive-audit-2026/publishable.py \
+            "$RUNNER_TEMP/aggregates-raw.json" "$RUNNER_TEMP/aggregates-rerun.json"
+      - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: aggregates-rerun
+          path: ${{ runner.temp }}/aggregates-rerun.json
+          retention-days: 30
+          if-no-files-found: error
