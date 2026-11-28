@@ -68,6 +68,9 @@ one, family by family.
   from the FCC's Feb-2024 DEMO-ONLY set; use v0.10.2+.
 - `docs/signed-template-library.md`: a non-normative guide to building a
   signed template library
+- `research/ipaws-archive-audit-2026/`: a non-normative audit of what one
+  year of archived United States public alerts carried (16,508 messages, no
+  video, no sign language), with its script and its counts
 - `CHANGELOG.md`: governance events and releases
 - `FAQ.md`, `SECURITY.md`, `LICENSE` (Apache-2.0), `LICENSE-SPEC.md`
   (specification text, CC BY 4.0) and `STANDARDS-GRANT.md`

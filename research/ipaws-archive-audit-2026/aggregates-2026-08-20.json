@@ -1,0 +1,1040 @@
+{
+ "aggregates": {
+  "by_originator_class": {
+   "definition": "nws = sender 'w-nws.webmaster@noaa.gov' (one federal machine-to-machine originator); non_nws = every other sender (state, local, tribal, territorial and other federal alerting authorities). The split is reported because originator practice differs on every dimension measured, so a single window-wide percentage can be dominated by one sender.",
+   "non_nws": {
+    "alert_messages": 10978,
+    "alerts_with_CMAMtext": 6434,
+    "alerts_with_CMAMtext_pct": 58.61,
+    "alerts_with_any_resource": 2527,
+    "alerts_with_any_resource_pct": 23.02,
+    "alerts_with_spanish_info": 1525,
+    "alerts_with_spanish_info_pct": 13.89,
+    "audio_resources": 2678,
+    "geocode_only_pct": 44.69,
+    "geometry_buckets": {
+     "circle_only": 797,
+     "geocode_only": 4906,
+     "no_area_element": 1035,
+     "polygon": 4240
+    },
+    "image_resources": 22,
+    "resource_entries_per_info": 2728,
+    "video_resources": 0
+   },
+   "nws": {
+    "alert_messages": 5478,
+    "alerts_with_CMAMtext": 5478,
+    "alerts_with_CMAMtext_pct": 100.0,
+    "alerts_with_any_resource": 0,
+    "alerts_with_any_resource_pct": 0.0,
+    "alerts_with_spanish_info": 5478,
+    "alerts_with_spanish_info_pct": 100.0,
+    "audio_resources": 0,
+    "geocode_only_pct": 0.13,
+    "geometry_buckets": {
+     "geocode_only": 7,
+     "polygon": 5471
+    },
+    "image_resources": 0,
+    "resource_entries_per_info": 0,
+    "video_resources": 0
+   }
+  },
+  "by_period": [
+   {
+    "any_resource": 270,
+    "any_resource_pct": 19.99,
+    "end": "2025-09-20T00:00:00.000Z",
+    "geocode_only": 456,
+    "geocode_only_pct": 33.75,
+    "nws_sender": 394,
+    "nws_sender_pct": 29.16,
+    "period": "2025-08-20_to_2025-09-20",
+    "spanish": 505,
+    "spanish_non_nws": 111,
+    "spanish_non_nws_pct": 11.6,
+    "spanish_pct": 37.38,
+    "start": "2025-08-20T00:00:00.000Z",
+    "total": 1351,
+    "video_or_image": 0,
+    "video_or_image_pct": 0.0
+   },
+   {
+    "any_resource": 207,
+    "any_resource_pct": 20.52,
+    "end": "2025-10-20T00:00:00.000Z",
+    "geocode_only": 425,
+    "geocode_only_pct": 42.12,
+    "nws_sender": 212,
+    "nws_sender_pct": 21.01,
+    "period": "2025-09-20_to_2025-10-20",
+    "spanish": 313,
+    "spanish_non_nws": 101,
+    "spanish_non_nws_pct": 12.67,
+    "spanish_pct": 31.02,
+    "start": "2025-09-20T00:00:00.000Z",
+    "total": 1009,
+    "video_or_image": 0,
+    "video_or_image_pct": 0.0
+   },
+   {
+    "any_resource": 195,
+    "any_resource_pct": 22.06,
+    "end": "2025-11-20T00:00:00.000Z",
+    "geocode_only": 438,
+    "geocode_only_pct": 49.55,
+    "nws_sender": 86,
+    "nws_sender_pct": 9.73,
+    "period": "2025-10-20_to_2025-11-20",
+    "spanish": 169,
+    "spanish_non_nws": 83,
+    "spanish_non_nws_pct": 10.4,
+    "spanish_pct": 19.12,
+    "start": "2025-10-20T00:00:00.000Z",
+    "total": 884,
+    "video_or_image": 0,
+    "video_or_image_pct": 0.0
+   },
+   {
+    "any_resource": 181,
+    "any_resource_pct": 25.6,
+    "end": "2025-12-20T00:00:00.000Z",
+    "geocode_only": 343,
+    "geocode_only_pct": 48.51,
+    "nws_sender": 57,
+    "nws_sender_pct": 8.06,
+    "period": "2025-11-20_to_2025-12-20",
+    "spanish": 110,
+    "spanish_non_nws": 53,
+    "spanish_non_nws_pct": 8.15,
+    "spanish_pct": 15.56,
+    "start": "2025-11-20T00:00:00.000Z",
+    "total": 707,
+    "video_or_image": 1,
+    "video_or_image_pct": 0.14
+   },
+   {
+    "any_resource": 165,
+    "any_resource_pct": 20.3,
+    "end": "2026-01-20T00:00:00.000Z",
+    "geocode_only": 360,
+    "geocode_only_pct": 44.28,
+    "nws_sender": 150,
+    "nws_sender_pct": 18.45,
+    "period": "2025-12-20_to_2026-01-20",
+    "spanish": 251,
+    "spanish_non_nws": 101,
+    "spanish_non_nws_pct": 15.23,
+    "spanish_pct": 30.87,
+    "start": "2025-12-20T00:00:00.000Z",
+    "total": 813,
+    "video_or_image": 0,
+    "video_or_image_pct": 0.0
+   },
+   {
+    "any_resource": 167,
+    "any_resource_pct": 19.95,
+    "end": "2026-02-20T00:00:00.000Z",
+    "geocode_only": 377,
+    "geocode_only_pct": 45.04,
+    "nws_sender": 105,
+    "nws_sender_pct": 12.54,
+    "period": "2026-01-20_to_2026-02-20",
+    "spanish": 178,
+    "spanish_non_nws": 73,
+    "spanish_non_nws_pct": 9.97,
+    "spanish_pct": 21.27,
+    "start": "2026-01-20T00:00:00.000Z",
+    "total": 837,
+    "video_or_image": 0,
+    "video_or_image_pct": 0.0
+   },
+   {
+    "any_resource": 179,
+    "any_resource_pct": 15.43,
+    "end": "2026-03-20T00:00:00.000Z",
+    "geocode_only": 378,
+    "geocode_only_pct": 32.59,
+    "nws_sender": 405,
+    "nws_sender_pct": 34.91,
+    "period": "2026-02-20_to_2026-03-20",
+    "spanish": 460,
+    "spanish_non_nws": 55,
+    "spanish_non_nws_pct": 7.28,
+    "spanish_pct": 39.66,
+    "start": "2026-02-20T00:00:00.000Z",
+    "total": 1160,
+    "video_or_image": 0,
+    "video_or_image_pct": 0.0
+   },
+   {
+    "any_resource": 205,
+    "any_resource_pct": 14.73,
+    "end": "2026-04-20T00:00:00.000Z",
+    "geocode_only": 429,
+    "geocode_only_pct": 30.82,
+    "nws_sender": 478,
+    "nws_sender_pct": 34.34,
+    "period": "2026-03-20_to_2026-04-20",
+    "spanish": 605,
+    "spanish_non_nws": 127,
+    "spanish_non_nws_pct": 13.89,
+    "spanish_pct": 43.46,
+    "start": "2026-03-20T00:00:00.000Z",
+    "total": 1392,
+    "video_or_image": 0,
+    "video_or_image_pct": 0.0
+   },
+   {
+    "any_resource": 219,
+    "any_resource_pct": 13.36,
+    "end": "2026-05-20T00:00:00.000Z",
+    "geocode_only": 436,
+    "geocode_only_pct": 26.6,
+    "nws_sender": 657,
+    "nws_sender_pct": 40.09,
+    "period": "2026-04-20_to_2026-05-20",
+    "spanish": 763,
+    "spanish_non_nws": 106,
+    "spanish_non_nws_pct": 10.79,
+    "spanish_pct": 46.55,
+    "start": "2026-04-20T00:00:00.000Z",
+    "total": 1639,
+    "video_or_image": 0,
+    "video_or_image_pct": 0.0
+   },
+   {
+    "any_resource": 210,
+    "any_resource_pct": 11.0,
+    "end": "2026-06-20T00:00:00.000Z",
+    "geocode_only": 435,
+    "geocode_only_pct": 22.79,
+    "nws_sender": 854,
+    "nws_sender_pct": 44.74,
+    "period": "2026-05-20_to_2026-06-20",
+    "spanish": 1032,
+    "spanish_non_nws": 178,
+    "spanish_non_nws_pct": 16.87,
+    "spanish_pct": 54.06,
+    "start": "2026-05-20T00:00:00.000Z",
+    "total": 1909,
+    "video_or_image": 5,
+    "video_or_image_pct": 0.26
+   },
+   {
+    "any_resource": 259,
+    "any_resource_pct": 11.13,
+    "end": "2026-07-20T00:00:00.000Z",
+    "geocode_only": 405,
+    "geocode_only_pct": 17.4,
+    "nws_sender": 1054,
+    "nws_sender_pct": 45.27,
+    "period": "2026-06-20_to_2026-07-20",
+    "spanish": 1285,
+    "spanish_non_nws": 231,
+    "spanish_non_nws_pct": 18.13,
+    "spanish_pct": 55.2,
+    "start": "2026-06-20T00:00:00.000Z",
+    "total": 2328,
+    "video_or_image": 0,
+    "video_or_image_pct": 0.0
+   },
+   {
+    "any_resource": 270,
+    "any_resource_pct": 11.12,
+    "end": "2026-08-20T00:00:00.000Z",
+    "geocode_only": 431,
+    "geocode_only_pct": 17.76,
+    "nws_sender": 1026,
+    "nws_sender_pct": 42.27,
+    "period": "2026-07-20_to_2026-08-20",
+    "spanish": 1332,
+    "spanish_non_nws": 306,
+    "spanish_non_nws_pct": 21.84,
+    "spanish_pct": 54.88,
+    "start": "2026-07-20T00:00:00.000Z",
+    "total": 2427,
+    "video_or_image": 0,
+    "video_or_image_pct": 0.0
+   }
+  ],
+  "events": {
+   "severity_first_info": {
+    "(absent)": 1035,
+    "Extreme": 7989,
+    "Minor": 625,
+    "Moderate": 39,
+    "Severe": 4773,
+    "Unknown": 1995
+   },
+   "top_20_event_strings_per_alert": {
+    "(absent)": 1035,
+    "Child Abduction Emergency": 238,
+    "Civil Emergency Message": 620,
+    "Demo Warning": 321,
+    "Dust Storm Warning": 159,
+    "Evacuation Immediate": 462,
+    "Fire Warning": 456,
+    "Flash Flood Warning": 1961,
+    "Law Enforcement Warning": 586,
+    "Local Area Emergency": 2004,
+    "Missing and Endangered Persons": 241,
+    "REQUIRED WEEKLY TEST": 313,
+    "Required Monthly Test": 377,
+    "Required Weekly Test": 2344,
+    "Routine Weekly Test": 82,
+    "SAFE Alert Activation": 139,
+    "Severe Thunderstorm Warning": 515,
+    "Shelter in Place Warning": 208,
+    "Tornado Warning": 2755,
+    "required weekly test": 342
+   },
+   "urgency_first_info": {
+    "(absent)": 1035,
+    "Expected": 1122,
+    "Future": 21,
+    "Immediate": 12413,
+    "Past": 90,
+    "Unknown": 1775
+   }
+  },
+  "excluded_records": {
+   "excluded_non_actual": 0,
+   "in_scope": 16456,
+   "records_loaded": 16456
+  },
+  "geometry": {
+   "areas_per_alert_frequency": {
+    "0": 1035,
+    "1": 8385,
+    "12": 6,
+    "13": 6,
+    "15": 3,
+    "16": 1,
+    "2": 7009,
+    "26": 1,
+    "4": 2,
+    "5": 3,
+    "59": 1,
+    "6": 2
+   },
+   "areas_with_a_polygon": 16333,
+   "buckets_per_alert": {
+    "circle_only": 797,
+    "geocode_only": 4913,
+    "no_area_element": 1035,
+    "polygon": 9711
+   },
+   "buckets_per_alert_pct": {
+    "circle_only": 4.84,
+    "geocode_only": 29.86,
+    "no_area_element": 6.29,
+    "polygon": 59.01
+   },
+   "cap_polygon_elements_total": 16762,
+   "circle_elements_total": 989,
+   "definition": "mutually exclusive, in priority order: polygon (>=1 area with a polygon), circle_only, geocode_only, area_description_only (areaDesc but no polygon/circle/geocode), no_area_element",
+   "geocode_name_frequency": {
+    "CAPEXCH": 10,
+    "CMAS": 10,
+    "EAS": 10,
+    "FIPS6": 3,
+    "NWEM": 10,
+    "PUBLIC": 10,
+    "SAME": 44931,
+    "UGC": 22118
+   }
+  },
+  "language": {
+   "alerts_with_any_non_english_info": 7003,
+   "alerts_with_any_non_english_info_pct": 42.56,
+   "alerts_with_no_english_info": 0,
+   "alerts_with_spanish_info": 7003,
+   "alerts_with_spanish_info_pct": 42.56,
+   "alerts_with_third_language_info": {},
+   "distinct_language_tags": [
+    "en-US",
+    "es-US"
+   ],
+   "info_blocks_per_alert_frequency": {
+    "0": 1035,
+    "1": 8418,
+    "2": 7003
+   },
+   "info_blocks_total": 22424,
+   "language_frequency_per_info": {
+    "en-US": 15421,
+    "es-US": 7003
+   }
+  },
+  "msgType": {
+   "Alert": 14329,
+   "Cancel": 1457,
+   "Update": 670
+  },
+  "multimedia": {
+   "alerts_with_at_least_one_resource": 2527,
+   "alerts_with_at_least_one_resource_by_class": {
+    "audio": 2509,
+    "image": 6,
+    "other": 2,
+    "text": 25
+   },
+   "alerts_with_at_least_one_resource_pct": 15.36,
+   "alerts_with_no_resource": 13929,
+   "audio_resources": 2678,
+   "audio_share_of_resources_pct": 98.17,
+   "extension_video_or_image_but_other_mimetype": [
+    {
+     "ext_class": "image",
+     "identifier": "GA.001_450_2025-10-27T09:46:46-04:00",
+     "mimeType": "application/octet-stream",
+     "mime_class": "other",
+     "resourceDesc": "Attached file: GA_001_ID450_TM68FF772E_Wade.jpg",
+     "sent": "2025-10-27T13:46:46.000Z",
+     "uri": "[withheld: the file may show a person]"
+    },
+    {
+     "ext_class": "image",
+     "identifier": "GA.413_549_2025-11-25T13:20:47-05:00",
+     "mimeType": "application/octet-stream",
+     "mime_class": "other",
+     "resourceDesc": "Attached file: GA_413_ID549_TM6925F2A5_Screenshot_2025-11-25_131611.png",
+     "sent": "2025-11-25T18:20:47.000Z",
+     "uri": "[withheld: the file may show a person]"
+    },
+    {
+     "ext_class": "image",
+     "identifier": "GA.413_549_2025-11-25T13:20:47-05:00",
+     "mimeType": "application/octet-stream",
+     "mime_class": "other",
+     "resourceDesc": "Attached file: GA_413_ID549_TM6925F301_IMG_0568.jpeg",
+     "sent": "2025-11-25T18:20:47.000Z",
+     "uri": "[withheld: the file may show a person]"
+    }
+   ],
+   "image_resources": 22,
+   "media_class_by_uri_extension_per_info": {
+    "audio": 2471,
+    "image": 25,
+    "none": 232
+   },
+   "media_class_per_info": {
+    "audio": 2678,
+    "image": 22,
+    "other": 3,
+    "text": 25
+   },
+   "mimeType_frequency_per_info": {
+    "application/octet-stream": 3,
+    "audio/x-ipaws-audio-mp3": 2674,
+    "audio/x-ipaws-streaming-audio": 4,
+    "image/jpeg": 3,
+    "image/png": 19,
+    "text/html": 24,
+    "text/plain": 1
+   },
+   "mime_class_vs_ext_class_per_info": {
+    "audio|audio": 2471,
+    "audio|none": 207,
+    "image|image": 22,
+    "other|image": 3,
+    "text|none": 25
+   },
+   "resourceDesc_frequency_per_info": {
+    "Alert Content": 16,
+    "Attached file: GA_001_ID450_TM68FF772E_Wade.jpg": 1,
+    "Attached file: GA_413_ID549_TM6925F2A5_Screenshot_2025-11-25_131611.png": 1,
+    "Attached file: GA_413_ID549_TM6925F301_IMG_0568.jpeg": 1,
+    "Car.png": 5,
+    "EAS Broadcast Content": 2679,
+    "Supplemental Info Link": 8,
+    "images/Suspect1.jpeg": 1,
+    "images/Suspect1.png": 5,
+    "images/Vehicle1.png": 1,
+    "images/Victim1.jpeg": 2,
+    "images/Victim1.png": 4,
+    "images/Victim2.png": 4
+   },
+   "resource_entries_distinct_per_alert_total": 2567,
+   "resource_entries_per_info_total": 2728,
+   "resource_uri_filenames_containing_test_sample": [
+    "1240690_EASEnglishOnlyTestMessage.mp3",
+    "1250935_EASSpanishOnlyTestMessage.mp3",
+    "1261177_EASENGSPANTestMessage.mp3",
+    "1289482_EASENGSPANTestMessage.mp3",
+    "1423249_EASENGSPANTestMessage.mp3",
+    "1423288_EASENGSPANTestMessage.mp3",
+    "1746459675_MEMA_EAS_Test.mp3",
+    "1756240540_EAS_Test.mp3",
+    "1757357086_MEMA_EAS_Test.mp3",
+    "1770122651_DPS_EAS_RMT_Test_Message.wav",
+    "1780429458_DPS_EAS_RMT_Test_Message.wav",
+    "EAS-TEST-WR_8.5.24.mp3",
+    "EASMONTHLYTEST2025.mp3",
+    "EASRWTMessage7-8-21.mp3",
+    "EASTestMessage.mp3",
+    "FCEMEAS-tests.mp3",
+    "Jennifer_Monthly_Test.mp3",
+    "MGFZZzc4OEpaV3haZjdHR1lHQ0RNaVVURWJjPQ",
+    "MONTHLY%20EAS%20TEST%20MSG-SY2-0008.mp3",
+    "MTZ2dzh0elg2b2Zqb0k4eG44dXA0T3pCeWpBPQ"
+   ],
+   "resource_uris_containing_test": 220,
+   "resources_with_derefUri": 82,
+   "sign_language_probe": {
+    "loose_matches": 0,
+    "loose_matches_verbatim": [],
+    "loose_regex": "asl|sign",
+    "strict_matches": 0,
+    "strict_matches_verbatim": [],
+    "strict_regex": "(?:\\basl\\b|[^a-z]asl[^a-z]|^asl[^a-z]|[^a-z]asl$|sign[\\s._-]*lang|signlang|american[\\s._-]*sign|libras|\\blsf\\b|\\bbsl\\b)"
+   },
+   "video_or_image_resources": 22,
+   "video_or_image_share_of_resources_pct": 0.81,
+   "video_resources": 0
+  },
+  "originators": {
+   "distinct_senders": 1196,
+   "nws_sender_alerts": 5478,
+   "top_20_senders": {
+    "200010_Notify_New_Jersey_New_Jersey_State_Police": 67,
+    "200166_EMD_(WA)_-_Emergency_Management_Division_(WMD)_Washington_Emergency_Management_Division": 73,
+    "200230_California_Highway_Patrol_CA_California_Highway_Patrol": 166,
+    "200341_Dakota_911_Citizen_Notification_System_Dakota911": 69,
+    "200485_Cass_Clay_Alerts_Red_River_Regional_Dispatch": 170,
+    "201057_Public_-_Chelan_County__WA_CHELAN_COUNTY": 77,
+    "ASHERGROUP": 224,
+    "AZArizonaDepartmentofPublicSafety": 274,
+    "EMnet-MI.039": 64,
+    "IN_City_of_Fort_Wayne": 198,
+    "IPAWS@dhs.gov": 468,
+    "NVWashoeCountyStateBackup": 82,
+    "NoReplyAlertRivCoEMD@rivco.org": 107,
+    "cass-county-mn-sheriffs-office@nixle.com": 79,
+    "helpalerts@ilogcorp.com": 875,
+    "[withheld: sender identifier containing a person's name, 1]": 68,
+    "[withheld: sender identifier containing a person's name, 2]": 78,
+    "savannah.roberts": 76,
+    "troopf.radio@mshp.dps.mo.gov": 72,
+    "w-nws.webmaster@noaa.gov": 5478
+   }
+  },
+  "same_event_codes": {
+   "alerts_with_a_SAME_code": 15421,
+   "counted_as": "distinct SAME eventCode values per alert message",
+   "distinct_codes": 26,
+   "full_table": {
+    "ADR": 200,
+    "BLU": 35,
+    "CAE": 258,
+    "CDW": 49,
+    "CEM": 646,
+    "DMO": 422,
+    "DSW": 159,
+    "EQW": 19,
+    "EVI": 552,
+    "EWW": 12,
+    "FFW": 1958,
+    "FRW": 509,
+    "HMW": 56,
+    "HUW": 14,
+    "LAE": 2207,
+    "LEW": 622,
+    "MEP": 303,
+    "NUW": 3,
+    "RHW": 1,
+    "RMT": 514,
+    "RWT": 3274,
+    "SPW": 231,
+    "SVR": 514,
+    "SVS": 69,
+    "TOE": 42,
+    "TOR": 2752
+   },
+   "top_10": {
+    "CEM": 646,
+    "EVI": 552,
+    "FFW": 1958,
+    "FRW": 509,
+    "LAE": 2207,
+    "LEW": 622,
+    "RMT": 514,
+    "RWT": 3274,
+    "SVR": 514,
+    "TOR": 2752
+   }
+  },
+  "scope": {
+   "Public": 16456
+  },
+  "status": {
+   "Actual": 16456
+  },
+  "subset_msgtype_alert": {
+   "alert_messages": 14329,
+   "alerts_with_CMAMtext": 10862,
+   "alerts_with_CMAMtext_pct": 75.8,
+   "alerts_with_any_resource": 2494,
+   "alerts_with_any_resource_pct": 17.41,
+   "alerts_with_spanish_info": 6488,
+   "alerts_with_spanish_info_pct": 45.28,
+   "audio_resources": 2644,
+   "geocode_only_pct": 32.4,
+   "geometry_buckets": {
+    "circle_only": 736,
+    "geocode_only": 4643,
+    "polygon": 8950
+   },
+   "image_resources": 22,
+   "resource_entries_per_info": 2694,
+   "video_resources": 0
+  },
+  "subset_real_events": {
+   "alert_messages": 10179,
+   "alerts_with_CMAMtext": 9774,
+   "alerts_with_CMAMtext_pct": 96.02,
+   "alerts_with_any_resource": 634,
+   "alerts_with_any_resource_pct": 6.23,
+   "alerts_with_spanish_info": 6226,
+   "alerts_with_spanish_info_pct": 61.17,
+   "audio_resources": 691,
+   "definition": "msgType=Alert and no SAME eventCode in ['RWT', 'RMT', 'DMO', 'NPT']: first-issuance messages about real events only.",
+   "geocode_only_pct": 9.31,
+   "geometry_buckets": {
+    "circle_only": 592,
+    "geocode_only": 948,
+    "polygon": 8639
+   },
+   "image_resources": 22,
+   "resource_entries_per_info": 728,
+   "video_resources": 0
+  },
+  "test_traffic": {
+   "alerts_with_a_test_same_code": 4210,
+   "alerts_with_a_test_same_code_pct": 25.58,
+   "by_code": {
+    "DMO": 422,
+    "RMT": 514,
+    "RWT": 3274
+   },
+   "definition": "alert messages carrying a SAME eventCode in ['RWT', 'RMT', 'DMO', 'NPT']. These are required EAS/WEA tests and demos; the archive transmits them with status=Actual, so a status filter alone does not remove them.",
+   "resource_entries_on_test_alerts": 1967,
+   "test_alerts_with_any_resource": 1861
+  },
+  "total_alert_messages": 16456,
+  "wea_text": {
+   "CMAMlongtext_entries_per_info": 17839,
+   "CMAMtext_entries_per_info": 18670,
+   "alerts_with_CMAMlongtext": 11121,
+   "alerts_with_CMAMlongtext_pct": 67.58,
+   "alerts_with_CMAMtext": 11912,
+   "alerts_with_CMAMtext_pct": 72.39,
+   "alerts_with_WEAHandling": 12068,
+   "alerts_with_both_CMAM_params": 11121,
+   "alerts_with_either_CMAM_param": 11912,
+   "alerts_with_either_CMAM_param_pct": 72.39,
+   "parameter_name_frequency_per_info": {
+    "AWIPSidentifier": 10956,
+    "AudioSource": 516,
+    "BLOCKCHANNEL": 46088,
+    "CMAMlongtext": 17839,
+    "CMAMtext": 18670,
+    "EAS-ORG": 20609,
+    "EASHeader": 516,
+    "EASText": 608,
+    "MessagePriority": 516,
+    "NWSheadline": 1120,
+    "OriginatingSystem": 516,
+    "PostToWeb": 516,
+    "ReceiptsRequested": 516,
+    "SirenDuration": 516,
+    "StationID": 516,
+    "VTEC": 10956,
+    "VoiceRepeat": 516,
+    "WEAHandling": 18964,
+    "WMOidentifier": 10956,
+    "eventEndingTime": 10928,
+    "eventMotionDescription": 6954,
+    "flashFloodDamageThreat": 3916,
+    "flashFloodDetection": 3840,
+    "hailThreat": 1028,
+    "maxHailSize": 6436,
+    "maxWindGust": 1028,
+    "thunderstormDamageThreat": 1028,
+    "timezone": 6601,
+    "tornadoDetection": 5776,
+    "windThreat": 1028
+   },
+   "wea_subset_alerts": 11912,
+   "wea_subset_with_any_resource": 756,
+   "wea_subset_with_spanish_info": 6810,
+   "wea_subset_with_spanish_info_pct": 57.17
+  }
+ },
+ "dataset_context": {
+  "nws_sender_share": {
+   "2023_h1": {
+    "nws": 226437,
+    "total": 230365
+   },
+   "window": {
+    "nws": 5478,
+    "total": 16456
+   }
+  },
+  "records_by_calendar_year": {
+   "2012": 79832,
+   "2013": 363511,
+   "2014": 416910,
+   "2015": 407220,
+   "2016": 408678,
+   "2017": 416032,
+   "2018": 478909,
+   "2019": 544072,
+   "2020": 463431,
+   "2021": 485587,
+   "2022": 505278,
+   "2023": 269919,
+   "2024": 15933,
+   "2025": 15993,
+   "2026": 12149
+  },
+  "records_by_month_2023": {
+   "2023-01": 35944,
+   "2023-02": 37705,
+   "2023-03": 41701,
+   "2023-04": 38218,
+   "2023-05": 32922,
+   "2023-06": 43875,
+   "2023-07": 34520,
+   "2023-08": 1696,
+   "2023-09": 1068,
+   "2023-10": 809,
+   "2023-11": 711,
+   "2023-12": 750
+  },
+  "registry": {
+   "depDate": null,
+   "deprecated": null,
+   "lastDataSetRefresh": "2026-08-20T02:13:41.326Z",
+   "lastRefresh": "2026-08-04T22:40:36.263Z",
+   "modified": "2026-08-04T00:00:00.000Z",
+   "recordCount": 4883528,
+   "temporal": "2012-06-01/",
+   "version": 1
+  },
+  "status_filter_negative_control": {
+   "all time: status eq 'Actual'": null,
+   "all time: status ne 'Actual'": null,
+   "note": "a filter that returns everything proves nothing. These four counts show the status filter is evaluated server-side: inside the window a bogus status value returns 0 while Actual returns the full window, so 'no non-Actual records' is a property of the archive and not a silently ignored parameter. The two all-time counts are best-effort: an unfiltered scan of the 4.9M-record table can time out and is recorded as null when it does.",
+   "window: status eq 'Actual'": 16456,
+   "window: status eq 'ActualX' (bogus value)": 0,
+   "window: status ne 'Actual'": 0
+  }
+ },
+ "fetch_manifest_summary": {
+  "fetched_at_utc": "2026-08-20T03:43:54.243342+00:00",
+  "pages": 22,
+  "paging_strategy": "twelve 20th-to-20th sub-windows; within each, keyset paging on `sent` ascending with an inclusive cursor (sent ge last_seen_sent) and de-duplication on the record `id`. Inclusive cursor + dedupe is used instead of $skip so that records sharing an identical `sent` timestamp can neither be skipped nor double-counted.",
+  "subwindows": [
+   {
+    "end": "2025-09-20T00:00:00.000Z",
+    "expected_from_api": 1351,
+    "label": "2025-08-20_to_2025-09-20",
+    "pages": 2,
+    "rows_downloaded": 1352,
+    "start": "2025-08-20T00:00:00.000Z",
+    "unique_ids_fetched": 1351
+   },
+   {
+    "end": "2025-10-20T00:00:00.000Z",
+    "expected_from_api": 1009,
+    "label": "2025-09-20_to_2025-10-20",
+    "pages": 2,
+    "rows_downloaded": 1010,
+    "start": "2025-09-20T00:00:00.000Z",
+    "unique_ids_fetched": 1009
+   },
+   {
+    "end": "2025-11-20T00:00:00.000Z",
+    "expected_from_api": 884,
+    "label": "2025-10-20_to_2025-11-20",
+    "pages": 1,
+    "rows_downloaded": 884,
+    "start": "2025-10-20T00:00:00.000Z",
+    "unique_ids_fetched": 884
+   },
+   {
+    "end": "2025-12-20T00:00:00.000Z",
+    "expected_from_api": 707,
+    "label": "2025-11-20_to_2025-12-20",
+    "pages": 1,
+    "rows_downloaded": 707,
+    "start": "2025-11-20T00:00:00.000Z",
+    "unique_ids_fetched": 707
+   },
+   {
+    "end": "2026-01-20T00:00:00.000Z",
+    "expected_from_api": 813,
+    "label": "2025-12-20_to_2026-01-20",
+    "pages": 1,
+    "rows_downloaded": 813,
+    "start": "2025-12-20T00:00:00.000Z",
+    "unique_ids_fetched": 813
+   },
+   {
+    "end": "2026-02-20T00:00:00.000Z",
+    "expected_from_api": 837,
+    "label": "2026-01-20_to_2026-02-20",
+    "pages": 1,
+    "rows_downloaded": 837,
+    "start": "2026-01-20T00:00:00.000Z",
+    "unique_ids_fetched": 837
+   },
+   {
+    "end": "2026-03-20T00:00:00.000Z",
+    "expected_from_api": 1160,
+    "label": "2026-02-20_to_2026-03-20",
+    "pages": 2,
+    "rows_downloaded": 1161,
+    "start": "2026-02-20T00:00:00.000Z",
+    "unique_ids_fetched": 1160
+   },
+   {
+    "end": "2026-04-20T00:00:00.000Z",
+    "expected_from_api": 1392,
+    "label": "2026-03-20_to_2026-04-20",
+    "pages": 2,
+    "rows_downloaded": 1393,
+    "start": "2026-03-20T00:00:00.000Z",
+    "unique_ids_fetched": 1392
+   },
+   {
+    "end": "2026-05-20T00:00:00.000Z",
+    "expected_from_api": 1639,
+    "label": "2026-04-20_to_2026-05-20",
+    "pages": 2,
+    "rows_downloaded": 1640,
+    "start": "2026-04-20T00:00:00.000Z",
+    "unique_ids_fetched": 1639
+   },
+   {
+    "end": "2026-06-20T00:00:00.000Z",
+    "expected_from_api": 1909,
+    "label": "2026-05-20_to_2026-06-20",
+    "pages": 2,
+    "rows_downloaded": 1910,
+    "start": "2026-05-20T00:00:00.000Z",
+    "unique_ids_fetched": 1909
+   },
+   {
+    "end": "2026-07-20T00:00:00.000Z",
+    "expected_from_api": 2328,
+    "label": "2026-06-20_to_2026-07-20",
+    "pages": 3,
+    "rows_downloaded": 2330,
+    "start": "2026-06-20T00:00:00.000Z",
+    "unique_ids_fetched": 2328
+   },
+   {
+    "end": "2026-08-20T00:00:00.000Z",
+    "expected_from_api": 2427,
+    "label": "2026-07-20_to_2026-08-20",
+    "pages": 3,
+    "rows_downloaded": 2429,
+    "start": "2026-07-20T00:00:00.000Z",
+    "unique_ids_fetched": 2427
+   }
+  ],
+  "window_total_from_api": 16456
+ },
+ "generated_at_utc": "2026-08-20T04:03:39.558112+00:00",
+ "load_report": {
+  "distinct_identifiers": 16456,
+  "duplicate_id_rows_dropped": 10,
+  "duplicate_row_sent_values": [
+   "2025-09-11T13:16:12.000Z",
+   "2025-10-19T13:33:33.000Z",
+   "2026-03-16T12:00:00.000Z",
+   "2026-04-14T23:20:00.000Z",
+   "2026-05-07T18:30:35.000Z",
+   "2026-06-10T03:07:11.000Z",
+   "2026-07-03T16:56:40.000Z",
+   "2026-07-16T22:57:05.000Z",
+   "2026-07-30T15:17:26.000Z",
+   "2026-08-12T20:17:00.000Z"
+  ],
+  "identifiers_used_by_more_than_one_record": 0,
+  "identifiers_used_by_more_than_one_record_examples": {},
+  "ids_appearing_in_more_than_one_page_file": 10,
+  "page_files": 22,
+  "rows_downloaded_total": 16466,
+  "unique_records_by_id": 16456
+ },
+ "methodology": {
+  "counting_unit": "one archived CAP message = one 'alert'. msgType Update and Cancel messages are separate records and are included; the subset_msgtype_alert block repeats the headline numbers on msgType=Alert only.",
+  "endpoint": "https://www.fema.gov/api/open/v1/IpawsArchivedAlerts",
+  "media_classification": "mimeType prefix (video/ image/ audio/ text/), with a URI-extension backstop reported separately so a mislabelled video cannot hide.",
+  "originalMessage_excluded": "excluded from the bulk fetch for size; a deterministic sample is refetched with it and cross-checked against the parsed fields (S8).",
+  "per_info_note": "a CAP <info> block is per-language, so a bilingual message repeats its resource and parameter lists. Fields named *_per_info count info-level entries; everything else counts alert messages.",
+  "raw_dir": "<redacted>",
+  "rerun": "python3 fetch_and_aggregate.py            # refetch + recompute\npython3 fetch_and_aggregate.py --no-fetch # recompute from raw dir",
+  "select_fields": "identifier,sent,sender,status,msgType,scope,cogId,id,code,note,incidents,info",
+  "source_dataset": "OpenFEMA IPAWS Archived Alerts v1",
+  "status_in_scope": "Actual",
+  "window_bound_note": "half-open; end bound is 00:00Z of the run date, so 'today' is excluded. FEMA publishes with a documented ~24h delay, which leaves the last day inside the window partial: measured in sanity check S7.",
+  "window_end": "2026-08-20T00:00:00.000Z",
+  "window_start": "2025-08-20T00:00:00.000Z"
+ },
+ "sanity_checks": {
+  "all_passed": true,
+  "checks": [
+   {
+    "check": "sum(sub-window $inlinecount) == whole-window $inlinecount",
+    "detail": {
+     "difference": 0,
+     "sum_of_subwindows": 16456,
+     "whole_window": 16456
+    },
+    "id": "S1a",
+    "passed": true
+   },
+   {
+    "check": "per sub-window: unique records paged == $inlinecount",
+    "detail": {
+     "mismatched_subwindows": [],
+     "subwindows_checked": 12
+    },
+    "id": "S1b",
+    "passed": true
+   },
+   {
+    "check": "pages x page_size covers the reported total",
+    "detail": {
+     "max_capacity": 22000,
+     "note": "informational: keyset paging emits a short final page per sub-window, so capacity strictly exceeds the record count",
+     "page_size": 1000,
+     "pages": 22,
+     "records_loaded": 16456
+    },
+    "id": "S1c",
+    "passed": null
+   },
+   {
+    "check": "records loaded == whole-window $inlinecount at fetch time",
+    "detail": {
+     "api_window_total": 16456,
+     "difference": 0,
+     "records_loaded": 16456
+    },
+    "id": "S2",
+    "passed": true
+   },
+   {
+    "check": "every duplicate row sits exactly on a continuation-page cursor",
+    "detail": {
+     "continuation_pages": 10,
+     "duplicate_id_rows_dropped": 10,
+     "duplicate_sent_values_not_at_a_cursor": [],
+     "ids_in_more_than_one_page_file": 10,
+     "note": "the cursor is inclusive (sent ge last_seen) so each continuation page re-delivers the boundary record(s) on purpose; dropping them by `id` is what makes tied timestamps safe.",
+     "rows_downloaded_total": 16466,
+     "unique_records_by_id": 16456
+    },
+    "id": "S3",
+    "passed": true
+   },
+   {
+    "check": "each CAP identifier maps to exactly one record",
+    "detail": {
+     "distinct_identifiers": 16456,
+     "examples": {},
+     "identifiers_reused": 0,
+     "records": 16456
+    },
+    "id": "S4",
+    "passed": true
+   },
+   {
+    "check": "every loaded record has sent inside [WINDOW_START, WINDOW_END)",
+    "detail": {
+     "examples": [],
+     "max_sent": "2026-08-19T01:36:55.000Z",
+     "min_sent": "2025-08-20T00:39:00.000Z",
+     "out_of_window": 0
+    },
+    "id": "S5",
+    "passed": true
+   },
+   {
+    "check": "records outside status=Actual are excluded and counted",
+    "detail": {
+     "excluded_non_actual": 0,
+     "note": "the archive contains no non-Actual records in this window; the negative control in dataset_context shows the status filter is nonetheless applied server-side",
+     "status_counts": {
+      "Actual": 16456
+     }
+    },
+    "id": "S6",
+    "passed": true
+   },
+   {
+    "check": "final calendar day in the window is flagged as partial",
+    "detail": {
+     "final_day": "2026-08-19",
+     "median_records_per_other_day": 37,
+     "note": "FEMA publishes with a ~24h delay, so the last day inside the window is incomplete. It is retained (the window bound is a fixed constant) and reported here so a reviewer can see the effect is negligible.",
+     "records_on_final_day": 3,
+     "share_of_window_pct": 0.02
+    },
+    "id": "S7",
+    "passed": null
+   },
+   {
+    "check": "FEMA's parsed fields agree with the original CAP XML on a sample",
+    "detail": {
+     "agreement": {
+      "CMAMtext:agree": 240,
+      "circle:agree": 240,
+      "language_es:agree": 240,
+      "polygon:agree": 240,
+      "polygon_present:agree": 240,
+      "resource:agree": 240
+     },
+     "fields_compared": [
+      "resource",
+      "polygon (CAP element count)",
+      "polygon_present",
+      "circle",
+      "CMAMtext",
+      "language starting with es"
+     ],
+     "files": 12,
+     "mismatches": [],
+     "note": "counts are taken from the raw signed CAP XML in originalMessage with element-level regexes and compared to the parsed fields this script actually reads. A disagreement here would invalidate the aggregates.",
+     "records_checked": 240
+    },
+    "id": "S8",
+    "passed": true
+   },
+   {
+    "check": "records carrying no <info> block are counted, not dropped",
+    "detail": {
+     "msgType_of_those": {
+      "Cancel": 1035
+     },
+     "note": "CAP permits an info-less Cancel. Such records land in the no_area_element geometry bucket and in no language bucket; they are kept in the denominator because they are real archived messages.",
+     "records_without_info": 1035,
+     "share_pct": 6.29
+    },
+    "id": "S9",
+    "passed": null
+   }
+  ],
+  "failed": []
+ },
+ "script": "fetch_and_aggregate.py",
+ "published_copy_note": "In this published copy, three image URIs and two sender identifiers that contain a person's name are withheld. The script reproduces them from the public dataset."
+}
