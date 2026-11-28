@@ -26,6 +26,28 @@ dataset "IPAWS Archived Alerts" version 1. Counts are those of `aggregates-2026-
 | Messages with a Spanish block | 7,025 | 42.56% of messages |
 | Share of messages with Spanish among the 1,196 senders other than the one automated national sender | | 13.90% |
 
+## Verified and updated on 28 November 2026
+
+The script was run again on 28 November 2026 on a GitHub-hosted runner (workflow "Audit re-run").
+
+- For the published window, the re-run gives the same counts as the table above, to the last unit
+  (`aggregates-2026-11-28.json`).
+- For the latest full year, 2025-11-20T00:00:00Z to 2026-11-20T00:00:00Z
+  (`aggregates-2026-11-28-window-to-2026-11-20.json`), the picture is the same:
+
+| Measure | Count | Share |
+|---|---|---|
+| Archived messages | 17,632 | |
+| Distinct senders | 1,117 | |
+| Messages with any attached resource | 2,461 | 13.96% of messages |
+| Resource entries, counted per language block | 2,657 | |
+| Audio entries | 2,607 | 98.12% of entries |
+| Still image entries | 22 | 0.83% of entries |
+| Video entries | 0 | |
+| Entries whose description or address names a sign language | 0 | |
+| Messages with a Spanish block | 7,636 | 43.31% of messages |
+| Share of messages with Spanish among the senders other than the one automated national sender | | 13.87% |
+
 ## What it does not show
 
 - It counts messages, not people. It says nothing about what any Deaf or DeafBlind person received,
@@ -47,6 +69,9 @@ dataset "IPAWS Archived Alerts" version 1. Counts are those of `aggregates-2026-
   of the window (16,508 records).
 - `aggregates-2026-08-20.json`: an earlier snapshot of the same window, computed on 20 August 2026
   (16,456 records), kept for the stability check.
+- `aggregates-2026-11-28.json`: the re-run of the published window on 28 November 2026.
+- `aggregates-2026-11-28-window-to-2026-11-20.json`: the counts for the year to 20 November 2026,
+  computed on 28 November 2026.
 - `publishable.py`: makes the copy of a counts file that is published here (see below).
 
 ## Reproduce
